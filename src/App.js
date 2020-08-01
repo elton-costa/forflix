@@ -4,6 +4,8 @@ import LogoForflix from './components/LogoForflix';
 import ButtonForflix from './components/ButtonForflix';
 import FooterForflix from  './components/FooterForflix';
 import LogoImersao from './components/LogoImersao';
+import BannerForflix from './components/BannerForflix';
+import TagForflix from './components/TagForflix';
 
 function App() {
   return (
@@ -12,6 +14,10 @@ function App() {
         <LogoForflix />
         <ButtonForflix>Novo vídeo</ButtonForflix>
       </HeaderForflix>
+
+      <BannerForflix>
+        <TagForflix>Entretenimento</TagForflix>
+      </BannerForflix>
 
       <FooterForflix>
         <LogoForflix />
