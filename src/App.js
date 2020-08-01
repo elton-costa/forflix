@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderForflix from './components/HeaderForflix';
+import {HeaderForflix, Wrapper} from './components/HeaderForflix';
 import LogoForflix from './components/LogoForflix';
 import ButtonForflix from './components/ButtonForflix';
 import FooterForflix from  './components/FooterForflix';
@@ -8,19 +8,25 @@ import BannerForflix from './components/BannerForflix';
 import TagForflix from './components/TagForflix';
 import TitleForflix from './components/TitleForflix';
 import DescriptionForflix from './components/DescriptionForflix';
+import ThumbmailForflix from './components/ThumbmailForflix';
+import Rocky from './assets/img/rocky.png';
 
 function App() {
   return (
     <>
       <HeaderForflix>
-        <LogoForflix />
-        <ButtonForflix>Novo vídeo</ButtonForflix>
+        <Wrapper>
+          <LogoForflix />
+          <ButtonForflix>Novo vídeo</ButtonForflix>
+        </Wrapper>
       </HeaderForflix>
 
       <BannerForflix>
         <TagForflix>Entretenimento</TagForflix>
-        <TitleForflix>Tudo sobre a quadrilogia RAMBO</TitleForflix>
-        <DescriptionForflix>Vídeos semanais sobre cinema e histórias em quadrinhos, apresentados por Alexandre Callari, Bruno Zago e Daniel Lopes desde 2009.</DescriptionForflix>
+        <TitleForflix>ROCKY II: Um exemplo de LUTA contra si mesmo.</TitleForflix>
+        <DescriptionForflix>Uma conversa sobre o desenrolar do filme e de como o Rocky Balboa é um exemplo de campeão.</DescriptionForflix>
+
+        <ThumbmailForflix src={Rocky} alt="Thumbmail do Vídeo sobre o filme Rocky II"/>
       </BannerForflix>
 
       <FooterForflix>
