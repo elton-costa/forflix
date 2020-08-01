@@ -6,6 +6,8 @@ import FooterForflix from  './components/FooterForflix';
 import LogoImersao from './components/LogoImersao';
 import BannerForflix from './components/BannerForflix';
 import TagForflix from './components/TagForflix';
+import TitleForflix from './components/TitleForflix';
+import DescriptionForflix from './components/DescriptionForflix';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
 
       <BannerForflix>
         <TagForflix>Entretenimento</TagForflix>
+        <TitleForflix>Tudo sobre a quadrilogia RAMBO</TitleForflix>
+        <DescriptionForflix>Vídeos semanais sobre cinema e histórias em quadrinhos, apresentados por Alexandre Callari, Bruno Zago e Daniel Lopes desde 2009.</DescriptionForflix>
       </BannerForflix>
 
       <FooterForflix>

@@ -6,7 +6,7 @@ const TagForflix = styled.h2 `
     border-radius: 4rem;
     font-size: 30rem;
     background-color: var(--color-catogory-one);
-    padding: 20rem 18rem;
+    padding: 16rem 14rem;
     color: var(--color-gray-light);
 `;
       
