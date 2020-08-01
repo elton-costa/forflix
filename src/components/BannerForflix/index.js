@@ -1,8 +1,28 @@
 import styled from 'styled-components';
 import container from '../../Tools/container';
+import TagForflix from '../TagForflix';
+import TitleForflix from '../TitleForflix';
 
-const BannerForflix = styled.section`
-    ${container};
+export const Text = styled.div`
+    padding-top: 10rem;
+    max-width: 45%;
+
+    ${TagForflix} {
+        margin-bottom: 40rem;
+    }
+
+    ${TitleForflix} {
+        margin-bottom: 20rem;
+    }
 `;
-    
-export default BannerForflix;
+
+export const BannerForflix = styled.section`
+    ${container};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 70vh;
+    height: 100vh;
+
+`;
+

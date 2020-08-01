@@ -4,7 +4,7 @@ import LogoForflix from './components/LogoForflix';
 import ButtonForflix from './components/ButtonForflix';
 import FooterForflix from  './components/FooterForflix';
 import LogoImersao from './components/LogoImersao';
-import BannerForflix from './components/BannerForflix';
+import {BannerForflix, Text} from './components/BannerForflix';
 import TagForflix from './components/TagForflix';
 import TitleForflix from './components/TitleForflix';
 import DescriptionForflix from './components/DescriptionForflix';
@@ -22,10 +22,11 @@ function App() {
       </HeaderForflix>
 
       <BannerForflix>
-        <TagForflix>Entretenimento</TagForflix>
-        <TitleForflix>ROCKY II: Um exemplo de LUTA contra si mesmo.</TitleForflix>
-        <DescriptionForflix>Uma conversa sobre o desenrolar do filme e de como o Rocky Balboa é um exemplo de campeão.</DescriptionForflix>
-
+        <Text>
+          <TagForflix>Entretenimento</TagForflix>
+          <TitleForflix>ROCKY II: Um exemplo de LUTA contra si mesmo.</TitleForflix>
+          <DescriptionForflix>Uma conversa sobre o desenrolar do filme e de como o Rocky Balboa é um exemplo de campeão.</DescriptionForflix>
+        </Text>
         <ThumbmailForflix src={Rocky} alt="Thumbmail do Vídeo sobre o filme Rocky II"/>
       </BannerForflix>
 
