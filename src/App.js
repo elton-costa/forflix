@@ -10,6 +10,7 @@ import TitleForflix from './components/TitleForflix';
 import DescriptionForflix from './components/DescriptionForflix';
 import ThumbmailForflix from './components/ThumbmailForflix';
 import Rocky from './assets/img/rocky.png';
+import Phvox from './assets/img/Logo-phvox.jpg';
 
 function App() {
   return (
@@ -27,7 +28,12 @@ function App() {
           <TitleForflix>ROCKY II: Um exemplo de LUTA contra si mesmo.</TitleForflix>
           <DescriptionForflix>Uma conversa sobre o desenrolar do filme e de como o Rocky Balboa é um exemplo de campeão.</DescriptionForflix>
         </Text>
-        <ThumbmailForflix src={Rocky} alt="Thumbmail do Vídeo sobre o filme Rocky II"/>
+        <ThumbmailForflix 
+          src={Rocky} 
+          alt="Thumbmail do Vídeo sobre o filme Rocky II"
+          avatar={Phvox}
+          channelName="CanalPHVox"
+        />
       </BannerForflix>
 
       <FooterForflix>
