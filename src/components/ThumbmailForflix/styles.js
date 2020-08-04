@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const Avatar = styled.img`
     position: absolute;
-    top: 10rem;
-    left: 10rem;
+    top: var(--space);
+    left: var(--space);
     width: 50rem;
     height: 50rem;
     border-radius: 50%;
-    transform: translateX(calc((100% + 10rem) * -1));
-    transition: transform 100ms linear;
+    transform: translateX(calc((100% + var(--space)) * -1));
+    opacity: 0;
+    transition: transform 200ms linear, opacity 100ms linear;
 `;
 
 export const Thumb = styled.img`
@@ -16,16 +17,24 @@ export const Thumb = styled.img`
 `;
 
 export const WrapperThumb = styled.figure `
+    --space: 10rem;
     position: relative;
     border-radius: 4px;
     border: 2rem solid var(--color-catogory-video);
     width: 600px;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 100ms linear;
 
-&:hover{
-    & > ${Avatar} {
-        transform: translateX(0);
+    &:hover{
+        --move: calc(var(--space) * -1);
+        transform: translate(var(--move), var(--move));
+        transition: transform 100ms linear;
+        & > ${Avatar} {
+            transform: translateX(0);
+            opacity: 1;
+            transition: transform 100ms 150ms linear, opacity 300ms 150ms linear;
+        }
     }
-}
     
 `;
