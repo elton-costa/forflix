@@ -32,7 +32,7 @@ function App() {
           src={Rocky} 
           alt="Thumbmail do Vídeo sobre o filme Rocky II"
           avatar={Phvox}
-          channelName="CanalPHVox"
+          channelName="Canal PHVox"
         />
       </BannerForflix>
 
