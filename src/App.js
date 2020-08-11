@@ -34,6 +34,7 @@ function App() {
           title="ROCKY II: Um exemplo de LUTA contra si mesmo."
           avatar={Phvox}
           channelName="Canal PHVox"
+          timer="01:30:00"
         />
       </BannerForflix>
 
