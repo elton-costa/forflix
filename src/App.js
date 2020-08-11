@@ -31,6 +31,7 @@ function App() {
         <ThumbmailForflix 
           src={Rocky} 
           alt="Thumbmail do Vídeo sobre o filme Rocky II"
+          title="ROCKY II: Um exemplo de LUTA contra si mesmo."
           avatar={Phvox}
           channelName="Canal PHVox"
         />

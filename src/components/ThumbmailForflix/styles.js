@@ -1,6 +1,20 @@
 import styled from 'styled-components';
 import { WrapperAvatar } from '../AvatarForflix/styles';
 
+export const Title = styled.figcaption`
+    position: absolute;
+    left: var(--space);
+    bottom: var(--space);
+    font-size: 25rem;
+    color: var(--color-gray-light);
+    font-weight: 300;
+    background-color: var(--color-black-medium);
+    padding: 4rem 6rem;
+    transform: translateX(calc((100% + var(--space)) * -1));
+    opacity: 0;
+    transition: transform 200ms linear, opacity 100ms linear;
+`;
+
 export const Thumb = styled.img`
     width: 100%;
     transition: filter 100ms linear;
@@ -18,7 +32,7 @@ export const WrapperThumb = styled.figure `
         position: absolute;
         top: var(--space);
         left: var(--space);
-        margin-right: 10rem;
+        margin-right: var(--space);
         transform: translateX(calc((100% + var(--space)) * -1));
         opacity: 0;
         transition: transform 200ms linear, opacity 100ms linear;
@@ -78,7 +92,13 @@ export const Background = styled.div`
             & > ${WrapperAvatar} {
                 transform: translateX(0);
                 opacity: 1;
-                transition: transform 100ms 150ms linear, opacity 300ms 150ms linear;
+                transition: transform 250ms 200ms linear, opacity 300ms 200ms linear;
+            }
+
+            & > ${Title} {
+                transform: translateX(0);
+                opacity: 1;
+                transition: transform 250ms 200ms linear, opacity 300ms 200ms linear;
             }
         }
     }
