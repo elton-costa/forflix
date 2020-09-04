@@ -18,7 +18,7 @@ function App() {
       <HeaderForflix>
         <Wrapper>
           <LogoForflix />
-          <ButtonForflix>Novo vídeo</ButtonForflix>
+          <ButtonForflix as="a" href="/video/new">Novo vídeo</ButtonForflix>
         </Wrapper>
       </HeaderForflix>
 
