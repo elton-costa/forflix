@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import container from '../../Tools/container';
+import container from '../../styles/Tools/container';
 import TagForflix from '../TagForflix';
 import TitleForflix from '../TitleForflix';
 

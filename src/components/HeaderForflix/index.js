@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import ButtonForflix from '../ButtonForflix';
 import LogoForflix from '../LogoForflix';
-import container from '../../Tools/container';
+import container from '../../styles/Tools/container';
 
 export const HeaderForflix = styled.header`
   padding: 20rem 30rem;
