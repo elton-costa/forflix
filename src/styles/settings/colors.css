@@ -1,12 +1,10 @@
 :root {
-    --color-primary-medium: #31572c;
-    --color-black-dark: #000;
-    --color-black-medium: rgba(0, 0, 0, 0.712);
-    --color-gray-light: #f5f5f5;
+  --color-primary-medium: #31572c;
+  --color-black-dark: #000;
+  --color-black-medium: rgba(0, 0, 0, 0.712);
+  --color-gray-light: #f5f5f5;
 
-    --color-catogory-video: #94E17F;
-    --color-catogory: #0a351a;
-    --color-catogory-two: ;
-   
-   
+  --color-catogory-video: #94e17f;
+  --color-catogory: #0a351a;
+  --color-catogory-two: ;
 }

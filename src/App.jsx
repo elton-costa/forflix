@@ -1,10 +1,10 @@
 import React from 'react';
-import {HeaderForflix, Wrapper} from './components/HeaderForflix';
+import { HeaderForflix, Wrapper } from './components/HeaderForflix';
 import LogoForflix from './components/LogoForflix';
 import ButtonForflix from './components/ButtonForflix';
-import FooterForflix from  './components/FooterForflix';
+import FooterForflix from './components/FooterForflix';
 import LogoImersao from './components/LogoImersao';
-import {BannerForflix, Text} from './components/BannerForflix';
+import { BannerForflix, Text } from './components/BannerForflix';
 import TagForflix from './components/TagForflix';
 import TitleForflix from './components/TitleForflix';
 import DescriptionForflix from './components/DescriptionForflix';
@@ -18,18 +18,25 @@ function App() {
       <HeaderForflix>
         <Wrapper>
           <LogoForflix />
-          <ButtonForflix as="a" href="/video/new">Novo vídeo</ButtonForflix>
+          <ButtonForflix as="a" href="/video/new">
+            Novo vídeo
+          </ButtonForflix>
         </Wrapper>
       </HeaderForflix>
 
       <BannerForflix>
         <Text>
           <TagForflix>Entretenimento</TagForflix>
-          <TitleForflix>ROCKY II: Um exemplo de LUTA contra si mesmo.</TitleForflix>
-          <DescriptionForflix>Uma conversa sobre o desenrolar do filme e de como o Rocky Balboa é um exemplo de campeão.</DescriptionForflix>
+          <TitleForflix>
+            ROCKY II: Um exemplo de LUTA contra si mesmo.
+          </TitleForflix>
+          <DescriptionForflix>
+            Uma conversa sobre o desenrolar do filme e de como o Rocky Balboa é
+            um exemplo de campeão.
+          </DescriptionForflix>
         </Text>
-        <ThumbmailForflix 
-          src={Rocky} 
+        <ThumbmailForflix
+          src={Rocky}
           alt="Thumbmail do Vídeo sobre o filme Rocky II"
           title="ROCKY II: Um exemplo de LUTA contra si mesmo."
           avatar={Phvox}
@@ -40,7 +47,16 @@ function App() {
 
       <FooterForflix>
         <LogoForflix />
-        <p>Site feito na <a href="https://alura.com.br" target="_blank" rel="noopener noreferrer"><LogoImersao /></a></p>
+        <p>
+          Site feito na
+          <a
+            href="https://alura.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LogoImersao />
+          </a>
+        </p>
       </FooterForflix>
     </>
   );
