@@ -5,7 +5,7 @@ const LogoImersao = styled.img.attrs({
   src: logo,
   alt: 'Logo da ImersãoReact da Alura',
 })`
-  height: 20px;
+  height: 40px;
   vertical-align: middle;
 `;
 

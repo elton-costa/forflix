@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import LogoForflix from '../LogoForflix';
 
-const FooterForflix = styled.footer`
+const FooterStyle = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +16,4 @@ const FooterForflix = styled.footer`
   }
 `;
 
-export default FooterForflix;
+export default FooterStyle;

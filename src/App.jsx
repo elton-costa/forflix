@@ -1,9 +1,4 @@
 import React from 'react';
-import { HeaderForflix, Wrapper } from './components/HeaderForflix';
-import LogoForflix from './components/LogoForflix';
-import ButtonForflix from './components/ButtonForflix';
-import FooterForflix from './components/FooterForflix';
-import LogoImersao from './components/LogoImersao';
 import { BannerForflix, Text } from './components/BannerForflix';
 import TagForflix from './components/TagForflix';
 import TitleForflix from './components/TitleForflix';
@@ -11,18 +6,14 @@ import DescriptionForflix from './components/DescriptionForflix';
 import ThumbmailForflix from './components/ThumbmailForflix';
 import Rocky from './assets/img/rocky.png';
 import Phvox from './assets/img/Logo-phvox.jpg';
+import HeaderOpen from './components/HeaderOpen';
+import FooterOpen from './components/FooterOpen';
+import SectionForflix from './components/SectionForflix';
 
 function App() {
   return (
     <>
-      <HeaderForflix>
-        <Wrapper>
-          <LogoForflix />
-          <ButtonForflix as="a" href="/video/new">
-            Novo vídeo
-          </ButtonForflix>
-        </Wrapper>
-      </HeaderForflix>
+      <HeaderOpen />
 
       <BannerForflix>
         <Text>
@@ -45,19 +36,13 @@ function App() {
         />
       </BannerForflix>
 
-      <FooterForflix>
-        <LogoForflix />
-        <p>
-          Site feito na
-          <a
-            href="https://alura.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LogoImersao />
-          </a>
-        </p>
-      </FooterForflix>
+      <SectionForflix>
+        <TagForflix>Meus vídeos favoritos</TagForflix>
+        <DescriptionForflix>
+        Esta seção é destinada para armazenamento e visualização dos meus vídeos favoritos do YouTube.
+        </DescriptionForflix>
+      </SectionForflix>
+      <FooterOpen />
     </>
   );
 }
