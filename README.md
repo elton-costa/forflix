@@ -1,9 +1,9 @@
 # forflix
-![](https://img.shields.io/github/languages/count/elton87/project-forflix) ![](https://img.shields.io/github/languages/top/elton87/project-forflix) ![](https://img.shields.io/github/last-commit/elton87/project-forflix) ![](https://img.shields.io/github/repo-size/elton87/project-forflix)
+![](https://img.shields.io/github/languages/count/elton87/forflix) ![](https://img.shields.io/github/languages/top/elton87/forflix) ![](https://img.shields.io/github/last-commit/elton87/forflix) ![](https://img.shields.io/github/repo-size/elton87/forflix)
 
-O projeto forflix, desenvolvido durante a Imersão React da Alura.
+O projeto forflix, desenvolvido com a aulas do Marco Bruno Dev na Twitch, pela Imersão React da Alura.
 
- O forflix é uma aplicação web com React, ela tem como intuito marcar e listas meus vídeos favoritos do YouTube.
+ O forflix é aplicação com React, ela tem como intuito listas meus vídeos favoritos do YouTube e Twitch.
 
 ## Tecnologias utilizadas:
 

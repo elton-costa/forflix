@@ -9,6 +9,56 @@ import Phvox from './assets/img/Logo-phvox.jpg';
 import HeaderOpen from './components/HeaderOpen';
 import FooterOpen from './components/FooterOpen';
 import SectionForflix from './components/SectionForflix';
+import CarouselForflix from './components/CarouselForflix';
+
+const videos = [
+  {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
+   {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
+   {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
+  {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
+  {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
+  
+]
 
 function App() {
   return (
@@ -37,11 +87,17 @@ function App() {
       </BannerForflix>
 
       <SectionForflix>
+
         <TagForflix>Meus vídeos favoritos</TagForflix>
+
         <DescriptionForflix>
-        Esta seção é destinada para armazenamento e visualização dos meus vídeos favoritos do YouTube.
+        Esta seção é destinada para armazenamento e visualização dos meus vídeos favoritos do YouTube e Twitch.
         </DescriptionForflix>
+
+        <TagForflix small>Canais</TagForflix>
+        <CarouselForflix videos={videos} />
       </SectionForflix>
+
       <FooterOpen />
     </>
   );

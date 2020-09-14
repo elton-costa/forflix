@@ -1,12 +1,17 @@
 import styled from 'styled-components';
-import container from '../../styles/Tools/container';
+import TagForflix from '../TagForflix';
 
 
 const SectionForflix = styled.section `
-  padding-top: 20rem;
-  padding-bottom: 40rem;
-  ${container}
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50rem;
+
+  & > ${TagForflix}:not(:first-child) {
+    margin-left: 30rem;
+    align-self: flex-start;
+  }
 `;
 
 export default SectionForflix;
