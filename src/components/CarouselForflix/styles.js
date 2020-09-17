@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   }
 
   ${({moveRight}) => moveRight && css`
-    transform: translateX(calc(var(--thumb-width) * -1));
+    transform: translateX(calc(var(--thumb-width) * ${moveRight} * -1));
   `}
 `;
 

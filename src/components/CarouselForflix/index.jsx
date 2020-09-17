@@ -7,7 +7,7 @@ function CarouselForflix({videos}) {
   const [moveRight, setMoveRight] = useState(false);
 
   function actionRight() {
-    setMoveRight(true);
+    setMoveRight((oldMoveRight) => oldMoveRight + 1);
   }
 
   return (
