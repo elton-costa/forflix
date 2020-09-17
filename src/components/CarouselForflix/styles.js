@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components';
 import {Background, WrapperThumb} from '../ThumbmailForflix/styles'; 
-import arrow from '../../assets/img/arrow.svg';
+import arrowR from '../../assets/img/arrow-right.svg';
+import arrowL from '../../assets/img/arrow-left.svg';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,27 +11,36 @@ export const Wrapper = styled.div`
     margin-right: 20rem;
   }
 
-  ${({moveRight}) => moveRight && css`
-    transform: translateX(calc(var(--thumb-width) * ${moveRight} * -1));
+  ${({move}) => css`
+    transform: translateX(calc(var(--thumb-width) * ${move}));
   `}
 `;
 
-export const Right = styled.button`
-position: absolute;
+const Arrow = css`
+  position: absolute;
   height: calc(100% - var(--space-top-bottom) * 2);
   width: 50rem;
   background-color: var(--color-primary-medium);
-  right: 0;
+  z-index: 1;
   opacity: 0;
   border: none;
   transition: opacity 200ms linear, transform 200ms linear;
   cursor: pointer;
   
   &::after {
-    content: url(${arrow});
     display: inline-block;
     opacity: 1;
     transition: transform 100ms linear;
+  }
+
+`;
+
+export const Right = styled.button`
+  ${Arrow};
+  right: 0;
+
+  &::after {
+    content: url(${arrowR});
   }
 
   &:hover::after {
@@ -38,7 +48,24 @@ position: absolute;
   }
 
   &:active::after {
-    transform: translateX(4rem) scale(1.2);
+    transform: scale(1.2) translateX(4rem);
+  }
+`;
+
+export const Left = styled.button`
+  ${Arrow};
+  left: 0;
+
+  &::after {
+    content: url(${arrowL});
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(1.2) translateX(-4rem);
   }
 `;
 
@@ -58,7 +85,7 @@ export const CarouselStyle = styled.div`
     width: var(--thumb-width);
   }
 
-  &:hover > ${Right} {
+  &:hover > ${Right}, &:hover > ${Left} {
     opacity: 0.8;
   }
 

@@ -1,18 +1,23 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import {CarouselStyle, Wrapper, Right} from './styles';
+import {CarouselStyle, Wrapper, Left, Right} from './styles';
 import ThumbmailForflix from '../ThumbmailForflix';
 
 function CarouselForflix({videos}) {
-  const [moveRight, setMoveRight] = useState(false);
+  const [move, setMove] = useState(0);
 
   function actionRight() {
-    setMoveRight((oldMoveRight) => oldMoveRight + 1);
+    setMove((oldMove) => oldMove - 1);
+  }
+
+  function actionLeft() {
+    setMove((oldMove) => oldMove + 1);
   }
 
   return (
     <CarouselStyle>
-      <Wrapper moveRight={moveRight}>
+    <Left onClick={actionLeft} />
+      <Wrapper move={move}>
         {videos.map(({src, alt, title, avatar, channelName, timer, link}) => (
           <ThumbmailForflix 
             src={src} 
