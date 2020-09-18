@@ -57,6 +57,24 @@ const videos = [
     timer: '01:30:00',
     link: '',
   },
+  {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
+  {
+    src: Rocky,
+    alt: 'Thumbmail do Vídeo sobre o filme Rocky II',
+    title: 'ROCKY II: Um exemplo de LUTA contra si mesmo.',
+    avatar: Phvox,
+    channelName: 'Canal PHVox',
+    timer: '01:30:00',
+    link: '',
+  },
   
 ]
 

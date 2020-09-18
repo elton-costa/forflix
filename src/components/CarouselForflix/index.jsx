@@ -1,10 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
+import {useWindowWidth} from '@react-hook/window-size';
 import PropTypes from 'prop-types';
 import {CarouselStyle, Wrapper, Left, Right} from './styles';
 import ThumbmailForflix from '../ThumbmailForflix';
 
 function CarouselForflix({videos}) {
   const [move, setMove] = useState(0);
+  const [wrapperWidth, setWrapperWidth] = useState(0);
+  const winWidth = useWindowWidth();
+  const $wrapper = useRef(null);
+
+  useEffect(() => setWrapperWidth($wrapper.current.getBoundingClientRect().width), []);
 
   function actionRight() {
     setMove((oldMove) => oldMove - 1);
@@ -14,14 +20,10 @@ function CarouselForflix({videos}) {
     setMove((oldMove) => oldMove + 1);
   }
 
-  function leftShow() {
-    return move < 0;
-  }
-
   return (
-    <CarouselStyle leftShow={leftShow()} rightShow={true}>
+    <CarouselStyle move={move} moveLastRight={wrapperWidth - winWidth}>
     <Left onClick={actionLeft} />
-      <Wrapper move={move}>
+      <Wrapper ref={$wrapper}>
         {videos.map(({src, alt, title, avatar, channelName, timer, link}) => (
           <ThumbmailForflix 
             src={src} 
